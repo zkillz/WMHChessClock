@@ -59,7 +59,6 @@ void loop() {
     playerLED();
     lcdTimer();
     lcdScenario();
-    //Serial.println(millis());
   }
   if (pause) {
     p.update();
