@@ -14,9 +14,7 @@ void buttonSetup() {
 }
 
 void timerSetup() {
-  //p.every(1000,playTone);
   t.every(1000, timer);
-  s.every(1000, serialWrite);
 
   p1Time[0] = p2Time[0] = timeTot = 60;
   p1Time[1] = p2Time[1] = 0;

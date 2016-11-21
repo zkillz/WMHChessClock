@@ -48,11 +48,10 @@ void setup() {
 }
 
 void loop() {
-  s.update();
+  serialRead();
   pauseSwitch();
   playerSwitch();
   scenario();
-  serialRead();
 
   if (!pause) {
     t.update();
@@ -60,8 +59,8 @@ void loop() {
     lcdTimer();
     lcdScenario();
   }
+  
   if (pause) {
-    p.update();
     pauseLED();
     lcdScenario();
   }

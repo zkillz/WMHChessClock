@@ -25,7 +25,8 @@ void timer() {
   }
 
   if (mins == 0 && secs == 0) {
-    pause = !pause;
+    pause = true;
+    playLongTone();
   }
 
   if (player) {
@@ -37,5 +38,7 @@ void timer() {
     p2Time[0] = mins;
     p2Time[1] = secs;
   }
+
+  serialWrite();
 }
 
